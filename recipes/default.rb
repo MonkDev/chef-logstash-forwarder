@@ -83,6 +83,7 @@ when "debian"
     variables(
       :dir              => node["logstash-forwarder"]["dir"],
       :user             => node["logstash-forwarder"]["user"],
+      :group            => node["logstash-forwarder"]["group"],
       :log_dir          => node["logstash-forwarder"]["log_dir"],
       :config_file      => node["logstash-forwarder"]["config_file"]
     )
